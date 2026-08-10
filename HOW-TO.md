@@ -4,6 +4,32 @@ Everything you need is in one single file: **newsletter-template.html**
 
 ---
 
+## Brand basis
+
+The template follows your *Brand Identity Quick Guide (2019)*:
+
+| | |
+|---|---|
+| Green | `#B0CB1F` — accents, buttons, rules |
+| Gray | `#656A75` — captions and secondary text |
+| Black | `#000000` — header and footer bands |
+| White | `#FFFFFF` — background |
+| Dark green | `#4F5802` — links on white (the brand green is too light to read as text) |
+| Headings | Times LT Std, falling back to Georgia / Times New Roman |
+| Body text | Gotham Book, falling back to Helvetica / Arial |
+
+Gotham and Times LT Std are not installed on most recipients' computers, and
+email cannot load fonts the way a website does. The template asks for them
+first and falls back automatically — so it looks right for you and stays
+readable for everyone else.
+
+**Still missing: the official logo.** The header currently shows the name set
+in Times italic. As soon as you have the logo as a PNG with a transparent
+background (white or gold version, about 900 px wide), it can go in — the
+instructions are written into the file, search for `LOGO`.
+
+---
+
 ## Golden rule
 
 Never edit the original. Always make a copy first.
