@@ -73,19 +73,24 @@ Save with Cmd+S (Mac) / Ctrl+S (Windows).
 
 ---
 
-## Step 2 — Put the images in
+## Step 2 — Images
 
-In the file you will find these five placeholders:
+**The two Brügel photos are already in place** and already hosted online, so
+they will show up for every recipient. Nothing to do there.
+
+Three optional slots are still open:
 
 | Placeholder | What it is | Recommended size |
 |---|---|---|
-| `LOGO` | your logo (optional, see note below) | 900 px wide, transparent PNG |
-| `BILD-1` | large title image at the top | 1200 × 700 px |
-| `BILD-2` | image in the middle section | 1000 × 620 px |
-| `BILD-3` / `BILD-4` | the two small side-by-side images | 800 × 600 px |
-| `SIGNATUR` | your finished signature graphic (house + awards + Butterfly Cottage) | 1200 px wide |
+| `LOGO` | the official logo, in the black header | 900 px wide, transparent PNG |
+| `HERO` | a large title image above the headline | 1200 × 700 px |
+| `SIGNATUR` | the signature graphic (house + awards + Butterfly Cottage) | 1200 px wide |
 
-There are **two ways** to get your pictures in. Way B is easier.
+`HERO` and `SIGNATUR` are currently switched off, so the newsletter is complete
+without them. To switch one on, find it in the file — the instructions sit
+directly above each block.
+
+There are **two ways** to get a picture in. Way B is easier.
 
 ### Way A — images hosted online (best quality, recommended)
 
@@ -93,7 +98,7 @@ Upload the pictures to your website (or ask your web person to do it), then
 replace the placeholder with the full web address:
 
 ```
-src="BILD-1"      →     src="https://www.garden-park.co.uk/images/autumn.jpg"
+src="HERO"      →     src="https://www.garden-park.co.uk/images/autumn.jpg"
 ```
 
 Keep the quotation marks.
@@ -105,8 +110,8 @@ you will see empty grey boxes where the images belong. Click a box, press
 Delete, then drag your picture from Finder into that spot. Thunderbird attaches
 the image to the email automatically.
 
-> Note on the logo: the header currently shows the "GARDEN PARK / GUEST HOUSE /
-> GRANTOWN-ON-SPEY" wording as text, in gold on dark green. That always displays
+> Note on the logo: the header currently shows the "Garden Park / Guest House /
+> GRANTOWN-ON-SPEY" wording as text, in white and green on black. That always displays
 > correctly, even when a recipient blocks images. If you'd rather use the logo
 > graphic, the instructions are written right there in the file (search for
 > `LOGO`).
@@ -147,25 +152,23 @@ In Thunderbird: click the small arrow next to "To" and choose "Bcc".
 
 ---
 
-## Adding or removing sections
+## What's in this issue
 
-The file is built from blocks. Each one is fenced off with comments:
+The file follows the Word document, in this order:
 
-```
-<!-- BLOCK A START -->
-   ...
-<!-- BLOCK A ENDE -->
-```
+1. **Header** — black band with the name
+2. **Opening** — headline, greeting, the two intro paragraphs
+3. **Interactive map** — green *Open the map* button, linking to
+   `butterfly-cottage.co.uk/grantown/grantown-map.html`
+4. **Dinner, not at Garden Park Guest House** — the Brügel text with the two photos
+5. **Special offer: Generation Getaway** — with the ❤️ list in a highlighted box
+   and the promo code, followed by the black *Enquire now* button
+6. **Sign-off** — Daniel and Sarah
+7. **Footer** — address, phone, social links, licences, unsubscribe note
 
-- **Don't need a section?** Delete everything from `START` to `ENDE`, including
-  both comment lines.
-- **Need one more?** Copy the whole block from `START` to `ENDE` and paste it
-  directly underneath. Then change the text and the image name (e.g. `BILD-5`).
-
-Blocks available:
-- **BLOCK A** — image with heading, text and a link
-- **BLOCK B** — highlighted box, e.g. for a special offer
-- **BLOCK C** — two images side by side with captions
+Each section is fenced off with a comment line, for example
+`<!-- ==== DINNER / WEE FANCY BRÜGEL ==== -->`. To drop a section for the next
+issue, delete everything from one fence to the next.
 
 ---
 
